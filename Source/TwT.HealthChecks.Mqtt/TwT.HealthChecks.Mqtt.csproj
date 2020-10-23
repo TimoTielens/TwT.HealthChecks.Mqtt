@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Authors>Timo Tielens</Authors>
+    <Company>Timo Tielens bv.</Company>
+    <Copyright>Copyright 2020 Timo Tielens</Copyright>
+    <PackageProjectUrl>https://github.com/TimoTielens/TwT.HealthChecks.Mqtt</PackageProjectUrl>
+    <PackageTags>Health Mqtt HealthChecks TwT</PackageTags>
+    <NeutralLanguage />
+    <Description>This health check add-on checks the state of the a Mqtt broker</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="3.1.9" />
+    <PackageReference Include="MQTTnet" Version="3.0.12" />
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
