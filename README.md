@@ -27,6 +27,6 @@ Configure the services and add mqtt Health Check this way:
 Besides the actual implementation this repo also holds an example project that can be used as a playground and test out the application. Do note that you need to provide your own Mqtt server to test against.
 
 ## License/Copyright
-This project is distributed under the Apache license version 2.0 (see the [LICENSE](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt/blob/main/LICENSE.txt) file in the project root).
+This project is distributed under the Apache license version 2.0 (see the [LICENSE](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt/blob/development/LICENSE.txt) file in the project root).
 
 By submitting a pull request to this project, you agree to license your contribution under the Apache license version 2.0 to this project.
