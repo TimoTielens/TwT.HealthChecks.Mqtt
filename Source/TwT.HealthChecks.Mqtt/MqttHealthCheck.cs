@@ -7,6 +7,7 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using MQTTnet.Client;
 using MQTTnet.Client.Options;
 using MQTTnet.Extensions.ManagedClient;
+using MQTTnet.Formatter;
 
 namespace TwT.HealthChecks.Mqtt
 {
@@ -87,7 +88,7 @@ namespace TwT.HealthChecks.Mqtt
                 if (UnManagedMqttClient.IsConnected)
                 {
                     await UnManagedMqttClient.PingAsync(cancellationToken);
-                    return HealthCheckResult.Healthy();
+                    return HealthCheckResult.Healthy(PrintProtocolVersion(UnManagedMqttClient.Options.ProtocolVersion));
                 }
                 return new HealthCheckResult(context.Registration.FailureStatus, "Could not connect to the broker");
             }
@@ -110,7 +111,7 @@ namespace TwT.HealthChecks.Mqtt
                 if (ManagedMqttClient.IsConnected)
                 {
                     await ManagedMqttClient.PingAsync(cancellationToken);
-                    return HealthCheckResult.Healthy();
+                    return HealthCheckResult.Healthy(PrintProtocolVersion(ManagedMqttClient.Options.ClientOptions.ProtocolVersion));
                 }
                 return new HealthCheckResult(context.Registration.FailureStatus, "Could not connect to the broker");
             }
@@ -126,6 +127,21 @@ namespace TwT.HealthChecks.Mqtt
                 return "Could not connect to the broker";
 
             return e.Message;
+        }
+
+        private string PrintProtocolVersion(MqttProtocolVersion version)
+        {
+            switch (version)
+            {
+                case MqttProtocolVersion.V310:
+                    return "Protocol version '3.1.0'";
+                case MqttProtocolVersion.V311:
+                    return "Protocol version '3.1.1'";
+                case MqttProtocolVersion.V500:
+                    return "Protocol version '5.0.0'";
+                default:
+                    return "Protocol version 'unknown'";
+            }
         }
     }
 }
