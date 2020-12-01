@@ -26,6 +26,34 @@ Configure the services and add mqtt Health Check this way:
 ## Example
 Besides the actual implementation this repo also holds an example project that can be used as a playground and test out the application. Do note that you need to provide your own Mqtt server to test against.
 
+## Version history
+This package makes use of the [Semantic Versioning]( https://semver.org/). 
+
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+1.  MAJOR version when you make incompatible API changes,
+2.  MINOR version when you add functionality in a backwards compatible manner, and
+3.  PATCH version when you make backwards compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+### V 1.1.0
+Version information.
+#### Features
+-  Added protocol version information when the health is OK.
+
+#### Bug Fixes
+None.
+
+### V1.0.0
+First version
+#### Features
+-  Support for MQTT unmanaged client
+-  Support for MQTT managed client
+
+#### Bug Fixes
+None.
+
 ## License/Copyright
 This project is distributed under the Apache license version 2.0 (see the [LICENSE](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt/blob/main/LICENSE.txt) file in the project root).
 
