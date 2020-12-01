@@ -12,6 +12,13 @@
     <PackageTags>Health Mqtt HealthChecks TwT</PackageTags>
     <NeutralLanguage />
     <Description>This health check add-on checks the state of the a Mqtt broker</Description>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes># Maintenance
+- Updated nugets to the latest.
+# Features
+-  Added protocol version information when the health is OK.
+# Bug Fixes
+None.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

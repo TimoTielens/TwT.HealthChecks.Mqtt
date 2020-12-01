@@ -39,18 +39,22 @@ Additional labels for pre-release and build metadata are available as extensions
 
 ### V 1.1.0
 Version information.
+
+#### Maintenance
+- Updated nugets to the latest.
 #### Features
 -  Added protocol version information when the health is OK.
-
 #### Bug Fixes
 None.
 
 ### V1.0.0
 First version
+
+#### Maintenance
+None.
 #### Features
 -  Support for MQTT unmanaged client
 -  Support for MQTT managed client
-
 #### Bug Fixes
 None.
 
