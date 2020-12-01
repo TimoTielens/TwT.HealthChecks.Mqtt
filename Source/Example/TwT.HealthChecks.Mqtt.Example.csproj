@@ -12,8 +12,8 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI.SqlServer.Storage" Version="3.1.2" />    
     <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="3.1.2" />    
     <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.9" />
-    <PackageReference Include="MQTTnet" Version="3.0.12" />
-    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.12" />
+    <PackageReference Include="MQTTnet" Version="3.0.13" />
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.0.13" />
   </ItemGroup>
 
   <ItemGroup>
