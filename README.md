@@ -1,7 +1,7 @@
 # TwT.HealthChecks.Mqtt
 This health check add-on checks the state of a Mqtt broker. The NuGet can be found [here](https://www.nuget.org/packages/TwT.HealthChecks.Mqtt/).
 ============
-[![Current Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt)
+[![Current Version](https://img.shields.io/badge/version-1.1.0-green.svg)](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt)
 [![GitHub Issues](https://img.shields.io/github/issues/TimoTielens/TwT.HealthChecks.Mqtt.svg)](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt/issues)
 [![GitHub Stars](https://img.shields.io/github/stars/TimoTielens/TwT.HealthChecks.Mqtt.svg)](https://github.com/TimoTielens/TwT.HealthChecks.Mqtt) 
 
